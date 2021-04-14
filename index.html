@@ -16,6 +16,16 @@
       <li class="header__link-item"><button type="button" class="header__login">Войти</button></li>
     </ul>
   </header>
+  <section class="popup">
+    <form class="popup__container" name="profile" novalidate>
+      <button class="popup__close-form" type="button"></button>
+      <input type="email" class="popup__edit popup__edit_type_name" name="name" value="" placeholder="Логин" required minlength="2" maxlength="40"/>
+      <span class="popup__error" id="name__error"></span>
+      <input type="password" class="popup__edit popup__edit_type_description" name="description" value="" placeholder="Пароль" required minlength="6" maxlength="20"/>
+      <span class="popup__error" id="description__error"></span>
+      <button type="submit" class="popup__submit">Войти</button>
+    </form>
+  </section>
   <main class="main">
     <section class="first-place">
       <section class="login">
@@ -47,5 +57,6 @@
     </div>  
   </main>
   <footer class="footer"></footer>
+  <script type="module" src="./scripts/main.js"></script>
 </body>
 </html>
