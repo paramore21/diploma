@@ -1,0 +1,29 @@
+.login__enter-button {
+  font-style: normal;
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 22px;
+  text-align: center;
+  color: #ffffff;
+  background: #293241;
+  border-radius: 2px;
+  width: 100px;
+  height: 46px;
+  font-family: "Inter", sans-serif;
+  border: none;
+  margin-top: 5px;
+  width: 200px;
+}
+
+@media screen and (min-width: 768px) {
+  .login__enter-button {
+    height: 50px;
+    margin-top: 10px;
+  }
+}
+
+.login__enter-button:hover {
+  cursor: pointer;
+  opacity: 0.8;
+  transition: opacity 0.2s ease;
+}

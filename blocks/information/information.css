@@ -1,0 +1,12 @@
+.information {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  margin: 15px 0;
+}
+
+@media screen and (min-width: 768px){
+  .information {
+    margin: 15px 5px;
+  }
+}

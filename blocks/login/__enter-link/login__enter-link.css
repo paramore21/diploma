@@ -1,0 +1,8 @@
+.login__enter-link {
+  text-decoration: none;
+  color: #293241;
+  font-family: "Inter", sans-serif;
+  font-size: 20px;
+  line-height: 22px;
+  margin: 5px;
+}
