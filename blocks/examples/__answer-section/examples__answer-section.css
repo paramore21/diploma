@@ -1,0 +1,6 @@
+.examples__answer-section {
+  grid-column: 1;
+  margin: 0;
+  margin-bottom: 30px;
+  padding: 5px;
+}

@@ -1,0 +1,13 @@
+.examples__task-condition {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-content: center;
+  margin: 15px 0;
+  color: #293241;
+  font-family: "Poppins", sans-serif;
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 26px;
+  grid-column: 1;
+}

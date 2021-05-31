@@ -9,13 +9,12 @@
 @media screen and (min-width: 768px) {
   .login {
     background-color: #fff;
-    margin: 0 28px 0 28px;
+    margin: 0 28px;
   }
 }
 
 @media screen and (min-width: 1024px) {
   .login {
-    margin: 0;
     max-width: 500px;
   }
 }

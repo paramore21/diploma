@@ -1,15 +1,22 @@
 .login__input {
-  margin: 0;
-  font-family: Inter, sans-serif;
-  font-style: normal;
-  font-weight: normal;
-  font-size: 14px;
-  line-height: 17px;
+  margin: 5px 0;
+  font-family: "Nova-soft-reg", sans-serif;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 22px;
   border: 0;
-  border-bottom: 1px solid rgba(0, 0, 0, 0.2);
+  border-bottom: 1px solid rgba(0, 0, 0, 0.3);
   outline: none;
   text-overflow: ellipsis;
   white-space: nowrap;
+  width: 100%;
+}
+
+.login__input::placeholder {
+  font-family: "Nova-soft-reg", sans-serif;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 22px;
 }
 
 .login__input:first-of-type {
@@ -22,7 +29,7 @@
 
 @media screen and (min-width: 768px) {
   .login__input:first-of-type {
-  padding: 0 0 13px 0;
+    padding: 0 0 13px 0;
 }
 
 .login__input:last-of-type{

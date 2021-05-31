@@ -1,0 +1,21 @@
+.task-create__title {
+  margin: 0;
+  padding: 10px;
+  grid-column: 1;
+  object-fit: contain;
+  font-family: "Poppins", sans-serif;
+  font-weight: 900;
+  text-decoration: none;
+  color: #293241;
+  font-size: 20px;
+  line-height: 16px;
+  text-align: center;
+}
+  
+@media screen and (min-width: 768px) {
+  .task-create__title {
+    font-size: 26px;
+    line-height: 30px;
+    padding: 28px;
+  }
+}

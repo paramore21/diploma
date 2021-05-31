@@ -1,0 +1,25 @@
+.header__exit {
+  font-size: 16px;
+  text-align: center;
+  color: #ffffff;
+  background: #293241;
+  border-radius: 2px;
+  width: 85px;
+  height: 46px;
+  font-family: "Nova-soft-semi", sans-serif;
+  font-weight: 600;
+  border: none;
+  box-sizing: border-box;
+}
+
+@media screen and (min-width: 768px) {
+  .header__exit {
+    height: 50px;
+  }
+}
+
+.header__exit:hover {
+  cursor: pointer;
+  opacity: 0.8;
+  transition: opacity 0.2s ease;
+}

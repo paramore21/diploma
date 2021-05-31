@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="./pages/style.css">
+  <title>Отличник</title>
+</head>
+<body class="page teacher__task-create">
+  <header class="header">
+    <p class="header__logo">Отличник</p>
+    <button type="button" class="header__exit">Выход</button>
+  </header>
+  <section class="task-create">
+    <form class="task-create__form">
+      <h1 class="task-create__title">Создание нового примера</h1>
+      <input class="task-create_input" type="text" placeholder="Введите название или номер задания" name="title" value="" minlength="2" maxlength="80">
+      <span class="task-create_span" id="title__error"></span>
+      <input class="task-create_input" type="text" placeholder="Введите тему, к которой относится задание" name="tag" value="" minlength="2" maxlength="80">
+      <span class="task-create_span" id="tag__error"></span>
+      <div class="task-create_help">
+        <p class="task-create_help-paragraph">
+          Для верного отображения формул записывайте их в следующем формате:<br>
+          Для отображения степени используйте символ ^: так \(x^2\) будет записываться
+          как x^2.<br>
+          Для отображения объединяющей скобки необходимо использовать конструкцию <br>\\begin{cases} первое уравнение \\\ второе уравнение \\end{cases}.<br> 
+          Для отображения дроби \\frac{числитель}{знаменатель}.<br>
+          Для отображения индекса использовать нижнее подчеркивание: так \(x_1\) будет записан в виде х_1<br>
+          Для отображения знака квадратного корня необходимо использовать \sqrt{выражение}.<br>
+          Вся формула должна быть заключена в двойной символ $$ в начале и в конце.
+        </p>
+      </div>
+      <textarea class="task-create_input task-create_textarea" type="text" placeholder="Введите условие" rows="10" cols="10" wrap="hard" name="condition" value=""></textarea>
+      <span class="task-create_span" id="condition__error"></span>
+      <input class="task-create_input" type="text" placeholder="Введите верное решение" name="answer" value="" minlength="2" maxlength="8">
+      <span class="task-create_span" id="answer__error"></span>
+      <button class="task-create_preview" type="submit">Предварительный просмотр</button>
+    </form>
+  </section>
+  <section class="previev">
+    <div class="example">
+      <p class="examples__title">Решите систему линейных уравнений</p>
+      <p class="examples__task-condition">\begin{cases} 7x+5y=-40 \\ -5x+5y=+80 \end{cases}</p>
+      <label for="examples__answer" class="examples__label">Ответ</label>
+      <p class="examples__answer-section">
+      <input id="examples__answer" class="examples__input">
+      <button type="button" class="examples__button">Проверить</button></p>
+    </div>
+  </section>
+  <script type="text/javascript" id="MathJax-script" async
+    src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js">
+  </script>
+  <script type="module" src="scripts/teacherValidation.js"></script>
+</body>
+</html>

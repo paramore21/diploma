@@ -1,0 +1,10 @@
+.about__nav-item {
+  list-style: none;
+  font-family: "Nova-soft-semi", sans-serif;
+  font-weight: 750;
+  font-size: 20px;
+  line-height: 16px;
+  text-decoration: none;
+  color: #3d5a80;
+}
+

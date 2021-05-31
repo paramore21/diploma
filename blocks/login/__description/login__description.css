@@ -1,8 +1,10 @@
 .login__description {
-  font-family: "Inter";
+  font-family: 'Nova-bold', sans-serif;
+  letter-spacing: 0.5px;
   font-style: normal;
-  font-weight: 800;
+  font-weight: 700;
   font-size: 24px;
   line-height: 20px;
   color: #293241;
+  margin-left: 5px; 
 }

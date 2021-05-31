@@ -1,0 +1,30 @@
+.task-create_preview {
+  font-style: normal;
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 22px;
+  text-align: center;
+  color: #ffffff;
+  background: #293241;
+  border-radius: 2px;
+  width: 200px;
+  height: 46px;
+  align-self: center;
+  font-family: "Poppins", sans-serif;
+  border: none;
+  margin-top: 20px;
+}
+
+@media screen and (min-width: 768px) {
+  .task-create_preview {
+    width: 280px;
+    height: 50px;
+    margin-top: 15px;
+  }
+}
+
+.task-create_preview:hover {
+  cursor: pointer;
+  opacity: 0.8;
+  transition: opacity 0.2s ease;
+}

@@ -1,9 +1,16 @@
 .information__subtitle {
   text-decoration: none;
   color: #293241;
-  font-family: "Inter", sans-serif;
-  font-size: 18px;
-  line-height: 20px;
+  font-family: "Nova-soft-semi", sans-serif;
+  font-size: 16px;
+  line-height: 18px;
   margin: 5px;
-  font-weight: 400;
+  font-weight: 500;
+}
+
+@media screen and (min-width: 1024px){
+  .information__subtitle {
+    font-size: 18px;
+    line-height: 20px;
+  }
 }

@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="./pages/style.css">
+  <title>Отличник</title>
+</head>
+<body class="page">
+  <header class="header">
+    <p class="header__logo">Отличник</p>
+    <button type="button" class="header__exit">Выход</button>
+  </header>
+  <section class="teacher">
+    <button class="teacher__link" id="create-new-task">Создать новое задание</button>
+    <button class="teacher__link" id="send-task">Отправить задание для решения</button>
+  </section>
+  <section class="ready-task">
+    <ul class="ready-task__list">
+      <li class="ready-task__list-item"></li>
+    </ul>
+  </section>
+  <script type="text/javascript" id="MathJax-script" async
+    src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js">
+  </script>
+  <script type="module" src="./scripts/teacher.js"></script>
+</body>
+</html>

@@ -1,0 +1,15 @@
+.example {
+  display: grid;
+  grid-template-columns: 300px;
+  box-sizing: border-box;
+  justify-content: center;
+  align-content: center;
+  margin: 20px 0;
+  border-bottom: 1px solid #929292b0;
+}
+
+@media screen and (min-width: 768px) {
+  .example {
+    grid-template-columns: 600px;
+  }
+}

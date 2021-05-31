@@ -1,23 +1,20 @@
 .login__enter-button {
   font-style: normal;
-  font-weight: normal;
+  font-weight: 700;
   font-size: 18px;
   line-height: 22px;
   text-align: center;
   color: #ffffff;
   background: #293241;
   border-radius: 2px;
-  width: 100px;
-  height: 46px;
-  font-family: "Inter", sans-serif;
+  font-family: "Nova-soft-reg", sans-serif;
   border: none;
   margin-top: 5px;
-  width: 200px;
+  width: 90px;
 }
 
 @media screen and (min-width: 768px) {
   .login__enter-button {
-    height: 50px;
     margin-top: 10px;
   }
 }

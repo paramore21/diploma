@@ -1,0 +1,14 @@
+.teacher__link {
+  text-decoration: none;
+  color: #293241;
+  font-family: "Poppins", sans-serif;
+  font-size: 18px;
+  line-height: 20px;
+  margin: 5px;
+  font-weight: 550;
+  cursor: pointer;
+  border: 1px solid #98c1d9;
+  background: none;
+  box-shadow: none;
+  height: 80px;
+}

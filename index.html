@@ -11,19 +11,23 @@
   <header class="header">
     <a href="#" class="header__logo" target="_blank">Отличник</a>
     <ul class="header__links">
-      <li class="header__link-item"><a href="#" class="header__link-item_link header__link-item_link_type_teacher">Для учителя</a></li>
-      <li class="header__link-item"><a href="#" class="header__link-item_link header__link-item_link_type_pupil">Для ученика</a></li>
-      <li class="header__link-item"><button type="button" class="header__login">Войти</button></li>
+      <li class="header__link-item"><p class="header__link-item_link header__link-item_link_type_teacher">Для учителя</p></li>
+      <li class="header__link-item"><p class="header__link-item_link header__link-item_link_type_pupil">Для ученика</p></li>
+      <li class="header__link-item"><button type="button" class="header__login">Зарегистрироваться</button></li>
     </ul>
   </header>
   <section class="popup">
     <form class="popup__container" name="profile" novalidate>
       <button class="popup__close-form" type="button"></button>
-      <input type="email" class="popup__edit popup__edit_type_name" name="name" value="" placeholder="Логин" required minlength="2" maxlength="40"/>
-      <span class="popup__error" id="name__error"></span>
-      <input type="password" class="popup__edit popup__edit_type_description" name="description" value="" placeholder="Пароль" required minlength="6" maxlength="20"/>
-      <span class="popup__error" id="description__error"></span>
-      <button type="submit" class="popup__submit">Войти</button>
+      <input type="text" class="popup__input popup__edit_type_name" name="userName" value="" placeholder="Логин" required minlength="2" maxlength="40"/>
+      <span class="popup__error" id="popup__userName__error"></span>
+      <input type="text" class="popup__input popup__edit_type_firstName" name="firstName" value="" placeholder="Имя" required minlength="2" maxlength="20"/>
+      <span class="popup__error" id="popup__firstName__error"></span>
+      <input type="text" class="popup__input popup__edit_type_middleName" name="middleName" value="" placeholder="Фамилия" required minlength="2" maxlength="20"/>
+      <span class="popup__error" id="popup__middleName__error"></span>
+      <input type="password" class="popup__input popup__edit_type_password" name="password" value="" placeholder="Пароль" required minlength="8" maxlength="15"/>
+      <span class="popup__error" id="popup__password__error"></span>
+      <button type="submit" class="popup__submit">Зарегистрироваться</button>
     </form>
   </section>
   <main class="main">
@@ -31,11 +35,10 @@
       <section class="login">
         <p class="login__description">Отличник - интерактивная образовательная онлайн-платформа</p>
         <form class="login__form">
-          <h2 class="login__title">Регистрация</h2>
+          <h2 class="login__title">Войти в личный кабинет</h2>
           <input class="login__input login__input_type_user" type="email" placeholder="Логин">
           <input class="login__input login__input_type_password" type="password" placeholder="Пароль">
-          <button class="login__enter-button" type="button">Зарегистрироваться</button>
-          <a class="login__enter-link login__enter-link_type_another" target="_blank" href="#">Войти с помощью</a>
+          <button class="login__enter-button" type="button">Войти</button>
         </form>
       </section>
     </section>  
@@ -49,14 +52,81 @@
         </h3>
       </section>
       <section class="slider">
-        <div class="slider__first"></div>
-        <div class="slider__second"></div>
-        <div class="slider__third"></div>
-        <div class="slider__fourth"></div>
+        <div class="container">
+          <button id="left-btn"><i class="arrow"></i></button>
+          <img id="carousel" src="" alt="">
+          <button id="right-btn"><i class="arrow"></i></button>
+      </div>
       </section>
-    </div>  
+    </div>
+    <section class="about">
+      <h2 class="about__title">Что доступно для ученика?</h2>
+      <ul class="about__nav">
+        <li class="about__nav-item">
+          <p class="about__nav-item_paragraph">Решайте личные домашние задания.</p>
+          <div class="example">
+            <p class="examples__title">Решите систему линейных уравнений</p>
+            <p class="examples__task-condition">\begin{cases} 7x+5y=-40 \\ -5x+5y=+80 \end{cases}</p>
+            <label for="examples__answer" class="examples__label">Ответ</label>
+            <p class="examples__answer-section"><input id="examples__answer" class="examples__input"><button type="button" class="examples__button">Проверить</button></p>
+          </div>
+        </li>
+        <li class="about__nav-item">
+          <p class="about__nav-item_paragraph">Тренируйтесь и практикуйте свои знания</p>
+          <div class="example">
+            <p class="examples__title">Решите квадратное уравнение</p>
+            <p class="examples__task-condition">$$x^2 + 2x + 5 = 0$$</p>
+            <label for="examples__answer" class="examples__label">Ответ</label>
+            <p class="examples__answer-section"><input id="examples__answer" class="examples__input"><button type="button" class="examples__button">Проверить</button></p>
+          </div>
+          <div class="example">
+            <p class="examples__title">Решите систему линейных уравнений</p>
+            <p class="examples__task-condition">\begin{cases} 90x - 42y = 198 \\ -22x - 10y = -170 \end{cases}</p>
+            <label for="examples__answer" class="examples__label">Ответ</label>
+            <p class="examples__answer-section"><input id="examples__answer" class="examples__input"><button type="button" class="examples__button">Проверить</button></p>
+          </div>
+        </li>
+      </ul>
+      <h2 class="about__title">Что доступно для учителя?</h2>
+      <ul class="about__nav">
+        <li class="about__nav-item">
+          <p class="about__nav-item_paragraph">Создавайте домашние задания.</p>
+          <form class="task-create__form">
+            <h1 class="task-create__title">Создание нового примера</h1>
+            <input class="task-create_input" type="text" placeholder="Введите название или номер задания" name="title" value="" minlength="2" maxlength="80">
+            <span class="task-create_span" id="title__error"></span>
+            <input class="task-create_input" type="text" placeholder="Введите тему, к которой относится задание" name="tag" value="" minlength="2" maxlength="80">
+            <span class="task-create_span" id="tag__error"></span>
+            <div class="task-create_help">
+              <p class="task-create_help-paragraph">
+                Для верного отображения формул записывайте их в следующем формате:<br>
+                Для отображения степени используйте символ ^: так \(x^2\) будет записываться
+                как x^2.<br>
+                Для отображения объединяющей скобки необходимо использовать конструкцию <br>\\begin{cases} первое уравнение \\\ второе уравнение \\end{cases}.<br> 
+                Для отображения дроби \\frac{числитель}{знаменатель}.<br>
+                Для отображения индекса использовать нижнее подчеркивание: так \(x_1\) будет записан в виде х_1<br>
+                Для отображения знака квадратного корня необходимо использовать \sqrt{выражение}.<br>
+                Вся формула должна быть заключена в двойной символ $$ в начале и в конце.
+              </p>
+            </div>
+            <textarea class="task-create_input task-create_textarea" type="text" placeholder="Введите условие" rows="10" cols="10" wrap="hard" name="condition" value=""></textarea>
+            <span class="task-create_span" id="condition__error"></span>
+            <input class="task-create_input" type="text" placeholder="Введите верное решение" name="answer" value="" minlength="2" maxlength="8">
+            <span class="task-create_span" id="answer__error"></span>
+            <button class="task-create_preview" type="submit">Предварительный просмотр</button>
+          </form>
+        </li>
+        <li class="about__nav-item">
+          <p class="about__nav-item_paragraph">Отправляйте задания ученикам</p>
+        </li>
+      </ul>
+    </section>
   </main>
   <footer class="footer"></footer>
+  <script type="text/javascript" id="MathJax-script" async
+    src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js">
+  </script>
+  <script type="module" src="./scripts/Api.js"></script>
   <script type="module" src="./scripts/main.js"></script>
 </body>
 </html>

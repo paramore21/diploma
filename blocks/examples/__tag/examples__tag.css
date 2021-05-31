@@ -1,0 +1,15 @@
+.examples__tag {
+  text-decoration: none;
+  color: #293241;
+  font-family: "Poppins", sans-serif;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 16px;
+  border: 1px solid #e0fbfc;
+  width: fit-content;
+  background: #ddddddb9;
+  height: 20px;
+  border-radius: 3px;
+  padding: 3px;
+  grid-column: 1;
+}

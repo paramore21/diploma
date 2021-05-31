@@ -1,0 +1,14 @@
+.examples__button {
+  font-size: 17px;
+  line-height: 20px;
+  text-align: center;
+  color: #fafafa;
+  background: #293241;
+  border-radius: 2px;
+  font-family: 'Nova-soft-semi', sans-serif;
+  grid-column: 1;
+  border: 1px solid rgba(41, 50, 65, 0.3);
+  width: 120px;
+  height: 46px;
+  box-sizing: border-box;
+}

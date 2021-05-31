@@ -1,0 +1,10 @@
+.examples__title {
+  color: #293241;
+  font-family: "Poppins", sans-serif;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 22px;
+  margin: 10px 5px;
+  grid-column: 1;
+  grid-row: 1;
+}

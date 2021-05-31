@@ -1,0 +1,31 @@
+.task-create_input {
+  margin: 10px auto;
+  font-family: "Poppins", sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 17px;
+  border: 0;
+  border: 1px solid rgba(0, 0, 0, 0.2);
+  outline: none;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  padding: 5px;
+  margin: 15px 5px;
+  width: 300px;
+  height: 50px;
+  box-sizing: border-box;
+}
+
+.task-create_textarea{
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  height: auto;
+}
+
+@media screen and (min-width: 768px){
+  .task-create_input {
+    width: 700px;
+  }
+}
